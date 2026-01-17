@@ -7,4 +7,12 @@
         gasTank --;
     }
     console.log('El tanque está vacío');
+
+    //! Ciclo Do While
+    gasTank = 50;
+    do {
+        console.log(`El tanque tiene ${gasTank} litros de gasolina`);
+        gasTank --;
+    } while(gasTank >= 0);
+    console.log('El tanque está vacío');
 })();
