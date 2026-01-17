@@ -13,4 +13,9 @@
         gasTank--;
     } while (gasTank >= 0);
     console.log('El tanque está vacío');
+    //! Ciclo For
+    for (var i = 0; i <= 10; i++) {
+        //!Scope del ciclo
+        console.log("El valor de i es: ".concat(i));
+    }
 })();
