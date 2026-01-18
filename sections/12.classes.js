@@ -6,7 +6,7 @@
             this.fuelTank = 0;
             this.isRunning = false;
             this.type = type;
-            this.creationDate = "".concat(new Date().getDate(), "-").concat(new Date().getUTCMonth() + 1, "-").concat(new Date().getFullYear());
+            this.creationDate = "".concat(new Date().getTime());
         }
         Car.prototype.turnOn = function () {
             if (this.isRunning) {
@@ -32,14 +32,14 @@
             var gas = this.fuelTank + fuel;
             this.fuelTank = (gas > 100) ? 100 : gas;
         };
+        Car.className = 'Car';
         return Car;
     }());
     var myMazda = new Car('Mazda', 4, 'Sedan');
     console.log(myMazda);
     myMazda.fillTank(20);
     myMazda.fillTank(40);
-    myMazda.fillTank(40);
-    myMazda.fillTank(40);
     myMazda.turnOn();
     console.log(myMazda);
+    console.log(Car.className);
 })();

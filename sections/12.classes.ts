@@ -1,18 +1,21 @@
 (() => {
     class Car {
-        brand: string;
-        doors: number;
-        fuelTank: number;
-        isRunning: boolean;
-        type: string;
-        creationDate: string;
+        static className = 'Car';
+
+        readonly brand: string;
+        readonly doors: number;
+        private fuelTank: number;
+        private isRunning: boolean;
+        readonly type: string;
+        readonly creationDate: string;
+        
         constructor(brand: string, doors: number, type: string){
             this.brand = brand;
             this.doors = doors;
             this.fuelTank = 0;
             this.isRunning = false;
             this.type = type;
-            this.creationDate = `${new Date().getDate()}-${new Date().getUTCMonth() + 1}-${new Date().getFullYear()}`
+            this.creationDate = `${new Date().getTime()}`
         }
 
         turnOn() : void {
@@ -49,4 +52,5 @@
     myMazda.fillTank(40);
     myMazda.turnOn();
     console.log(myMazda);
+    console.log(Car.className);
 })();
