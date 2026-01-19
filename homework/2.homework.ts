@@ -5,5 +5,6 @@
      */
     let kilometers: number = 10;
     let convertRate: number = 0.62;
-    console.log(`${kilometers} kilómetros = ${kilometers * convertRate} millas`);
+    let miles: number = kilometers * convertRate;
+    console.log(`${kilometers} kilómetros = ${miles} millas`);
 })();

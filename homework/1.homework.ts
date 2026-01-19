@@ -5,7 +5,7 @@
      */
 
     let pound: number = 150;
-    let convertPoundToKg: number = 0.453592;
-    let kg: number = pound * convertPoundToKg;
+    let convertRate: number = 0.453592;
+    let kg: number = pound * convertRate;
     console.log(`${pound} libras = ${kg} kilogramos`);
 })();

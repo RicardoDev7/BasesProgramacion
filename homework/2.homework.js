@@ -5,5 +5,6 @@
      */
     var kilometers = 10;
     var convertRate = 0.62;
-    console.log("".concat(kilometers, " kil\u00F3metros = ").concat(kilometers * convertRate, " millas"));
+    var miles = kilometers * convertRate;
+    console.log("".concat(kilometers, " kil\u00F3metros = ").concat(miles, " millas"));
 })();
