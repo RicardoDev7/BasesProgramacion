@@ -4,7 +4,7 @@
      * Utilizando un ciclo FOR, barra todo el arreglo y determine ¿Cuál es el número mayor?
      */
     var numbers = [1, 6, 8, 4, 2, 7, 10, 3, 5];
-    var highNumber = 0;
+    var highNumber = numbers[0];
     for (var index = 0; index < numbers.length; index++) {
         var value = numbers[index];
         if (value > highNumber)
